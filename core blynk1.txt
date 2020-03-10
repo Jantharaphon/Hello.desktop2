@@ -1,0 +1,35 @@
+/ *** (2) SYSTEM CONFIGURATION ***
+//WIFI CONFIG
+char ssid[] = "myWiFi_SSID";
+char pass[] = "wifipassword";
+//BLYNK TOKEN
+char auth[] = "589a20ebd2b043f5b3e57e4378ahadg6";
+char server[] = "xxx.xxx.xxx.xxx";
+unsigned int port = 8442;
+//LINE TOKEN
+#define TokenLine "Ynzzovc8dway85pRSJKNASdkTylkPnvBPs9MUpaBWRA"
+//FIREBASE CONFIG
+#define FIREBASE_HOST "smartfarmingxx.firebaseio.com"
+#define FIREBASE_AUTH "u7j7XhFN57gnDpmIfUrE5asdfa344RVKm3bnNHAQc"
+/* ---------------------------------------------------------------*/
+// *** WATERING CONFIG ***
+//ค่าเปอร์เซ็นต์ความชื้นในดินที่ต้องการให้เร่ิมรดน้ำต้นไม้
+#define PercentWatering = 40
+//ตั้งระยะเวลาการรดน้ำต้นไม้แต่ละครั้ง
+//15000 = 15 วินาที
+#define TimeWatering = 15000
+//ตั้งระยะห่างของเวลาที่ต้องการเช็คความชื้นในดิน
+//60000 = 6 นาที
+#define TimeSoilCheck = 360000
+/* ---------------------------------------------------------------*/
+// *** TIMER CONFIG ***
+//ตั้งเวลาส่งข้อมูลให้ BLYNK SERVER ทุกๆ 2 นาที
+//120 Secounds = 120000 Milliseconds
+#define sendSensorTime = 120000
+//ตั้งเวลาส่งข้อมูลให้ BLYNK SERVER ทุกๆ 3 นาที
+//180 Secound = 180000 Milliseconds
+#define sendSensor2Time = 180000
+//ตั้งเวลาให้เช็คว่า Blynk เชื่อมต่ออยู่หรือไม่ทุกๆ 10 วินาที
+#define checkConnectionTime = 10000
+//ส่งข้อมูลเข้า firebase ทุกๆ 5 นาที
+#define sendFirebaseTime = 300000
